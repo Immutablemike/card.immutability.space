@@ -43,7 +43,6 @@ h1 {
   font-size: 2rem;
   margin: 1rem 0 0.2rem;
   color: #fff;
-  text-shadow: 0 0 15px rgba(255,255,255,0.8);
   font-family: 'Blacklisted', cursive;
   font-weight: normal;
 }
@@ -65,19 +64,17 @@ h2 {
   display: inline-block;
   margin: 0.4rem;
   padding: 1rem 1.8rem;
-  border: 2px solid #fff;
-  color: #fff;
+  border: none;
+  background: transparent;
+  color: var(--magenta);
   text-decoration: none;
   transition: all 0.2s ease;
   font-family: 'Blacklisted', cursive;
   font-size: 1.2rem;
-  text-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
 .btn:hover {
-  background: #fff;
-  color: #000;
-  box-shadow: 0 0 20px rgba(255,255,255,0.8);
-  text-shadow: none;
+  color: #fff;
+  text-shadow: 0 0 10px var(--magenta);
 }
 
 .projects {
