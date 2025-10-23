@@ -73,7 +73,7 @@ h2 {
   max-height: 140px;
   object-fit: contain;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 15px var(--magenta));
+  filter: brightness(0) invert(1) drop-shadow(0 0 20px rgba(255,255,255,0.8));
   transition: filter 0.3s ease;
 }
 .project:hover {
@@ -81,12 +81,19 @@ h2 {
   box-shadow: 0 0 20px var(--magenta);
 }
 .project:hover img {
-  filter: drop-shadow(0 0 25px var(--magenta));
+  filter: brightness(0) invert(1) drop-shadow(0 0 35px rgba(255,255,255,1));
 }
 .project a {
   color: var(--cyan);
   text-decoration: none;
   font-weight: 600;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.project-title {
+  display: block;
+  margin-top: 0.5rem;
 }
 
 footer {
