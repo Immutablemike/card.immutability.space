@@ -136,8 +136,8 @@ footer {
   text-shadow: 0 0 8px var(--magenta);
 }
 .social-icon {
-  width: 24px;
-  height: 24px;
+  width: 31px;
+  height: 31px;
   filter: brightness(0) saturate(100%) invert(69%) sepia(89%) saturate(6151%) hue-rotate(297deg) brightness(101%) contrast(101%);
   transition: filter 0.3s ease;
 }
