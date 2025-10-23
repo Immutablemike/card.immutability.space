@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Seiler;ImmutableMike;;;
+FN:ImmutableMike Seiler
+TITLE:Systems Architect | Agentic AI Engineer | Quant & Web3 Architect
+ORG:Immutability.Space;HumanAtlas.ai
+EMAIL;TYPE=WORK:space@immutability.space
+TEL;TYPE=CELL:+1-310-867-0876
+ADR;TYPE=WORK:;;Chateau Marmont;Hollywood;CA;;
+URL:https://www.immutability.space
+URL:https://github.com/immutablemike
+URL:https://linkedin.com/in/michaeljohnseiler
+END:VCARD

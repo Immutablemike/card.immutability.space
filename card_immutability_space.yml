@@ -1,0 +1,319 @@
+Alright, here’s your production-ready card.immutability.space repo — dark-magenta cyberpunk theme, static and deployable. Drop this into GitHub, then vercel --prod.
+
+/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ImmutableMike | Immutability.Space</title>
+  <meta name="description" content="ImmutableMike Seiler — Systems Architect | Agentic AI Engineer | Quant + Web3 Architect" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="public/logos/immutability.png" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img src="public/logos/immutability.png" alt="Immutability.Space Logo" class="hero-logo" />
+      <h1>ImmutableMike Seiler</h1>
+      <h2>Systems Architect | Agentic AI Engineer | Quant + Web3 Architect</h2>
+      <p>Founder — Immutability.Space / HumanAtlas.ai</p>
+      <div class="tagline">W3 fuk w.r0b0t5 // W3.v1be 5p^ce.Ca$h</div>
+      <div class="buttons">
+        <a href="public/me.vcf" class="btn" download>Add to Contacts</a>
+        <a href="mailto:space@immutability.space" class="btn">Email Me</a>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="project">
+        <img src="public/logos/humanatlas.png" alt="The Human Atlas Project Logo" />
+        <a href="https://www.humanatlas.ai" target="_blank">The Human Atlas Project</a>
+      </div>
+      <div class="project">
+        <img src="public/logos/eli5.png" alt="ELI5 Logo" />
+        <a href="https://www.elifive.app" target="_blank">ELI5</a>
+      </div>
+      <div class="project">
+        <img src="public/logos/leandeck.png" alt="LeanDeck Logo" />
+        <a href="https://www.leandeck.pro" target="_blank">LeanDeck</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="socials">
+        <a href="https://github.com/immutablemike" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/michaeljohnseiler" target="_blank">LinkedIn</a>
+      </div>
+      <p>©2025 Immutability.Space | All Systems Autonomous</p>
+    </footer>
+  </main>
+</body>
+</html>
+
+/style.css
+:root {
+  --bg: #0d0d0f;
+  --magenta: #fe53bb;
+  --cyan: #08f7fe;
+  --font: 'JetBrains Mono', monospace;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #fff;
+  font-family: var(--font);
+  text-align: center;
+}
+
+.hero {
+  padding: 4rem 1rem 2rem;
+}
+.hero-logo {
+  width: 180px;
+  filter: drop-shadow(0 0 20px var(--magenta));
+}
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0 0.2rem;
+  color: var(--magenta);
+  text-shadow: 0 0 10px var(--magenta);
+}
+h2 {
+  font-weight: 400;
+  color: var(--cyan);
+}
+.tagline {
+  margin-top: 0.8rem;
+  font-style: italic;
+  color: var(--magenta);
+}
+.buttons {
+  margin-top: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  margin: 0.4rem;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--magenta);
+  color: var(--magenta);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background: var(--magenta);
+  color: #000;
+  box-shadow: 0 0 15px var(--magenta);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+.project {
+  background: #111;
+  border: 1px solid var(--magenta);
+  width: 280px;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px var(--magenta);
+}
+.project a {
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  padding: 2rem 1rem;
+  border-top: 1px solid #222;
+  color: #888;
+}
+.socials {
+  margin-bottom: 0.6rem;
+}
+.socials a {
+  color: var(--magenta);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+.socials a:hover {
+  text-shadow: 0 0 8px var(--magenta);
+}
+
+/public/me.vcf
+BEGIN:VCARD
+VERSION:3.0
+N:Seiler;ImmutableMike;;;
+FN:ImmutableMike Seiler
+TITLE:Systems Architect | Agentic AI Engineer | Quant & Web3 Architect
+ORG:Immutability.Space;HumanAtlas.ai
+EMAIL;TYPE=WORK:space@immutability.space
+TEL;TYPE=CELL:+1-310-867-0876
+ADR;TYPE=WORK:;;Chateau Marmont;Hollywood;CA;;
+URL:https://www.immutability.space
+URL:https://github.com/immutablemike
+URL:https://linkedin.com/in/michaeljohnseiler
+END:VCARD
+
+/vercel.json
+{
+  "version": 2,
+  "builds": [{ "src": "index.html", "use": "@vercel/static" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+}
+
+/README.md
+# card.immutability.space
+
+Neon-magenta cyberpunk hub for ImmutableMike — deployed on Vercel.
+
+## Deploy
+
+```bash
+git clone https://github.com/immutablemike/card.immutability.space.git
+cd card.immutability.space
+vercel --prod
+
+
+Then add a CNAME in Cloudflare:
+
+card  CNAME  cname.vercel-dns.com
+
+
+Your NFC tag URI:
+
+https://card.immutability.space
+
+
+Write with NFC Tools → Type “URL/URI” → Paste → Write Tag → Test.
+
+Edit
+
+Logos in /public/logos/
+
+Contact card in /public/me.vcf
+
+Styling in /style.css
+
+Links & text in /index.html
+
+
+---
+
+### `/public/logos/`
+Put your four local PNGs here:
+
+
+immutability.png
+humanatlas.png
+eli5.png
+leandeck.png
+
+
+---
+
+**Deploy Steps**
+
+```bash
+git init
+git remote add origin https://github.com/immutablemike/card.immutability.space.git
+git add .
+git commit -m "initial commit"
+git push -u origin main
+vercel --prod
+
+
+You’ll get a live URL in seconds; connect your subdomain; test NFC.
+
+That’s your whole stack — production-ready, dark, and fast.
+
+You said:
+you have the links the to PNGs asshole did you not include them in the script?
+ChatGPT said:
+Thought for 9s
+
+Fair. I didn’t pull them; I wired the paths. Here’s a drop-in fetch script that grabs your PNGs from those Drive links and drops them into /public/logos/ with the exact filenames the page expects.
+
+scripts/fetch_logos.sh
+#!/usr/bin/env bash
+set -euo pipefail
+
+mkdir -p public/logos
+
+# Google Drive direct-download helper (handles confirm token)
+gdrive_get () {
+  FILE_ID="$1"
+  OUT="$2"
+
+  COOKIE_JAR="$(mktemp)"
+  CONFIRM=$(curl -sc "$COOKIE_JAR" "https://drive.google.com/uc?export=download&id=${FILE_ID}" \
+    | tr -d '\n' | sed -n 's/.*confirm=\([^&]*\).*/\1/p')
+
+  if [[ -z "${CONFIRM}" ]]; then
+    # small files usually don't need confirm
+    curl -L --retry 3 --retry-all-errors \
+      "https://drive.google.com/uc?export=download&id=${FILE_ID}" -o "$OUT"
+  else
+    curl -Lb "$COOKIE_JAR" -L --retry 3 --retry-all-errors \
+      "https://drive.google.com/uc?export=download&confirm=${CONFIRM}&id=${FILE_ID}" -o "$OUT"
+  fi
+
+  file "$OUT" | grep -qi 'PNG image' || {
+    echo "Downloaded $OUT but it doesn't look like a PNG. Check share perms / link." >&2
+    exit 1
+  }
+}
+
+echo "Fetching logos to public/logos/ ..."
+
+# Immutability.Space (hero)
+gdrive_get "1TTKVsRek7iSThC8qpBQE8iY40AyhBgpR" "public/logos/immutability.png"
+
+# Human Atlas
+gdrive_get "1y2_2iGligGFwrUDKxJr5tgVEwwgQD238" "public/logos/humanatlas.png"
+
+# ELI5
+gdrive_get "1gTKKnxKCuyjVqOZWdubj80H1KlNFazvd" "public/logos/eli5.png"
+
+# LeanDeck
+gdrive_get "1nItC_eMu5nZ-cZ3Pon-xKzpmXl-etlBK" "public/logos/leandeck.png"
+
+echo "Done."
+
+Make it executable & run
+chmod +x scripts/fetch_logos.sh
+./scripts/fetch_logos.sh
+
+
+That’s it. The HTML already points to:
+
+public/logos/immutability.png
+
+public/logos/humanatlas.png
+
+public/logos/eli5.png
+
+public/logos/leandeck.png
+
+If any file 403s, it’s Google Drive share perms—set each to “Anyone with the link: Viewer.” After fetch, commit and ship:
+
+git add public/logos/*.png
+git commit -m "add logos"
+git push
+vercel --prod

@@ -1,0 +1,102 @@
+:root {
+  --bg: #0d0d0f;
+  --magenta: #fe53bb;
+  --cyan: #08f7fe;
+  --font: 'JetBrains Mono', monospace;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #fff;
+  font-family: var(--font);
+  text-align: center;
+}
+
+.hero {
+  padding: 4rem 1rem 2rem;
+}
+.hero-logo {
+  width: 180px;
+  filter: drop-shadow(0 0 20px var(--magenta));
+}
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0 0.2rem;
+  color: var(--magenta);
+  text-shadow: 0 0 10px var(--magenta);
+}
+h2 {
+  font-weight: 400;
+  color: var(--cyan);
+}
+.tagline {
+  margin-top: 0.8rem;
+  font-style: italic;
+  color: var(--magenta);
+}
+.buttons {
+  margin-top: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  margin: 0.4rem;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--magenta);
+  color: var(--magenta);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background: var(--magenta);
+  color: #000;
+  box-shadow: 0 0 15px var(--magenta);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+.project {
+  background: #111;
+  border: 1px solid var(--magenta);
+  width: 280px;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px var(--magenta);
+}
+.project a {
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  padding: 2rem 1rem;
+  border-top: 1px solid #222;
+  color: #888;
+}
+.socials {
+  margin-bottom: 0.6rem;
+}
+.socials a {
+  color: var(--magenta);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+.socials a:hover {
+  text-shadow: 0 0 8px var(--magenta);
+}
