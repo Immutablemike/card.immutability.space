@@ -17,8 +17,8 @@ body {
   padding: 4rem 1rem 2rem;
 }
 .hero-logo {
-  width: 180px;
-  filter: drop-shadow(0 0 20px var(--magenta));
+  width: 900px;
+  filter: brightness(0) invert(1) drop-shadow(0 0 30px rgba(255,255,255,0.8));
 }
 h1 {
   font-size: 2rem;
@@ -73,10 +73,15 @@ h2 {
   max-height: 140px;
   object-fit: contain;
   margin-bottom: 1rem;
+  filter: drop-shadow(0 0 15px var(--magenta));
+  transition: filter 0.3s ease;
 }
 .project:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 20px var(--magenta);
+}
+.project:hover img {
+  filter: drop-shadow(0 0 25px var(--magenta));
 }
 .project a {
   color: var(--cyan);
@@ -96,7 +101,15 @@ footer {
   color: var(--magenta);
   margin: 0 0.5rem;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .socials a:hover {
   text-shadow: 0 0 8px var(--magenta);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(69%) sepia(89%) saturate(6151%) hue-rotate(297deg) brightness(101%) contrast(101%);
 }
