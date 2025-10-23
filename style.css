@@ -60,12 +60,18 @@ h2 {
 }
 .buttons {
   margin-top: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
 }
 .btn {
   display: inline-block;
   margin: 0.4rem;
   padding: 1rem 1.8rem;
-  border: none;
+  border: 2px solid var(--magenta);
+  border-radius: 8px;
   background: transparent;
   color: var(--magenta);
   text-decoration: none;
@@ -73,6 +79,9 @@ h2 {
   font-family: 'Blacklisted', cursive;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
+  min-width: 140px;
+  text-align: center;
+  box-sizing: border-box;
 }
 .btn:hover {
   color: #fff;
