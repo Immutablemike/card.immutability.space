@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Blacklisted';
+  src: url('/public/Fonts/Blacklisted.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AL_LePORSCHE';
+  src: url('/public/Fonts/AL_LePORSCHE_PersonalUseOnly.ttf') format('truetype');
+  font-display: swap;
+}
+
 :root {
   --bg: #0d0d0f;
   --magenta: #fe53bb;
@@ -30,12 +42,16 @@ body {
 h1 {
   font-size: 2rem;
   margin: 1rem 0 0.2rem;
-  color: var(--magenta);
-  text-shadow: 0 0 10px var(--magenta);
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255,255,255,0.8);
+  font-family: 'Blacklisted', cursive;
+  font-weight: normal;
 }
 h2 {
   font-weight: 400;
-  color: var(--cyan);
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255,255,255,0.8);
+  font-family: 'AL_LePORSCHE', sans-serif;
 }
 .tagline {
   margin-top: 0.8rem;
@@ -48,16 +64,20 @@ h2 {
 .btn {
   display: inline-block;
   margin: 0.4rem;
-  padding: 0.7rem 1.4rem;
-  border: 1px solid var(--magenta);
-  color: var(--magenta);
+  padding: 1rem 1.8rem;
+  border: 2px solid #fff;
+  color: #fff;
   text-decoration: none;
   transition: all 0.2s ease;
+  font-family: 'Blacklisted', cursive;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
 .btn:hover {
-  background: var(--magenta);
+  background: #fff;
   color: #000;
-  box-shadow: 0 0 15px var(--magenta);
+  box-shadow: 0 0 20px rgba(255,255,255,0.8);
+  text-shadow: none;
 }
 
 .projects {
