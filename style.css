@@ -72,7 +72,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 0.4rem;
-  padding: 1rem 1.8rem;
+  padding: 1rem 1.5rem;
   border: 2px solid var(--magenta);
   border-radius: 8px;
   background: transparent;
@@ -82,7 +82,7 @@ h2 {
   font-family: 'Blacklisted', cursive;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
-  min-width: 140px;
+  min-width: 120px;
   text-align: center;
   box-sizing: border-box;
 }
