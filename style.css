@@ -158,24 +158,35 @@ footer {
 }
 
 /* Mobile responsiveness - force center alignment */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   * {
     text-align: center !important;
   }
   
-  body {
+  html, body {
     text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  main {
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
   
   .hero {
     text-align: center !important;
     padding: 2rem 1rem !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
   
   .projects {
     text-align: center !important;
     justify-content: center !important;
     align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
   
   .project {
@@ -186,15 +197,26 @@ footer {
   .socials {
     text-align: center !important;
     justify-content: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
   
   .buttons {
     text-align: center !important;
     justify-content: center !important;
     align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
   
   h1, h2 {
     text-align: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  
+  .hero-logo {
+    margin: 0 auto !important;
+    display: block !important;
   }
 }
