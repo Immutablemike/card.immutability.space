@@ -46,6 +46,7 @@ h1 {
   font-family: 'Blacklisted', cursive;
   font-weight: normal;
   letter-spacing: 0.1em;
+  text-shadow: 0 0 20px var(--magenta), 0 0 40px var(--magenta), 0 0 60px var(--magenta);
 }
 h2 {
   font-weight: 400;
