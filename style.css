@@ -37,6 +37,8 @@ body {
 }
 .hero-logo {
   width: 900px;
+  max-width: 90vw;
+  height: auto;
   filter: brightness(0) invert(1) drop-shadow(0 0 30px rgba(255,255,255,0.8));
 }
 h1 {
@@ -218,5 +220,7 @@ footer {
   .hero-logo {
     margin: 0 auto !important;
     display: block !important;
+    width: 85vw !important;
+    max-width: 350px !important;
   }
 }
