@@ -156,3 +156,32 @@ footer {
 .socials a:hover .social-icon {
   filter: brightness(0) saturate(100%) invert(100%);
 }
+
+/* Mobile responsiveness - force center alignment */
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  
+  .hero {
+    text-align: center;
+  }
+  
+  .projects {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .project {
+    text-align: center;
+  }
+  
+  .socials {
+    text-align: center;
+  }
+  
+  .buttons {
+    text-align: center;
+    justify-content: center;
+  }
+}
