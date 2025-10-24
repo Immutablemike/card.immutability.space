@@ -217,6 +217,14 @@ footer {
     margin: 0 auto !important;
   }
   
+  h2 {
+    font-size: 0.9rem !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  
   .hero-logo {
     margin: 0 auto !important;
     display: block !important;
