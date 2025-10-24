@@ -95,20 +95,20 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 1.4rem 1rem;
 }
 .project {
   background: transparent;
   border: none;
   width: 280px;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border-radius: 8px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .project img {
   width: 100%;
-  max-height: 218px;
+  max-height: 283px;
   object-fit: contain;
   margin-bottom: 1rem;
   filter: brightness(0) invert(1) drop-shadow(0 0 20px rgba(255,255,255,0.8));
