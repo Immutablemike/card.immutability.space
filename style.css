@@ -82,7 +82,7 @@ h2 {
   font-family: 'Blacklisted', cursive;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
-  min-width: 120px;
+  width: 120px;
   text-align: center;
   box-sizing: border-box;
 }
